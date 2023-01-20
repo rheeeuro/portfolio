@@ -10,8 +10,9 @@ h-screen
 
 const ChildrenContainer = tw.div`
 w-full
-max-w-xl
+max-w-2xl
 mx-auto
+p-4
 `;
 
 interface LayoutProps {
