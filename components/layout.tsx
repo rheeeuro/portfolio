@@ -3,8 +3,8 @@ import Navbar from "./navbar";
 import tw from "tailwind-styled-components";
 
 const LayoutContainer = tw.div`
-bg-slate-100
-dark:bg-gray-700
+bg-orange-50
+dark:bg-[#202023]
 h-screen
 `;
 

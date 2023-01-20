@@ -20,7 +20,10 @@ dark:text-white
 
 const TitleContainer = tw.div`
 flex
-justify-between
+flex-col
+md:flex-row
+md:justify-between
+justify-center
 my-4
 `;
 
@@ -35,6 +38,7 @@ const Name = tw.h1`
 text-4xl
 font-medium
 text-gray-900
+dark:text-white
 `;
 
 const SubName = tw.h4`
@@ -42,9 +46,13 @@ text-lg
 font-medium
 text-gray-900
 font-normal
+dark:text-white
 `;
 
-const Avatar = tw.div``;
+const Avatar = tw.div`
+flex
+justify-center
+`;
 
 const SubTitleContainer = tw.div`
 my-8
@@ -58,11 +66,14 @@ font-medium
 text-gray-900
 border-b-4
 border-gray-300
+dark:text-white
 `;
 
 const SubTitleDescription = tw.p`
 mt-4
-font-light
+font-medium
+text-gray-700
+dark:text-white
 `;
 
 const Home: NextPage = () => {
@@ -74,7 +85,7 @@ const Home: NextPage = () => {
       <TitleContainer>
         <Title>
           <Name>Euro Rhee</Name>
-          <SubName>Junior Developer</SubName>
+          <SubName>Front-end Developer</SubName>
         </Title>
         <Avatar>
           <Image src={profilePic} alt="avatar" width={80} height={100} />

@@ -1,13 +1,16 @@
+import { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
 
 const NavbarContainer = tw.nav`
-bg-white
 border-gray-200
 px-2
 sm:px-4
 py-2.5
 rounded
-dark:bg-gray-900
+bg-white
+bg-opacity-25
+dark:bg-[#202023]
+dark:bg-opacity-100
 `;
 
 const NavbarDiv = tw.div`
@@ -49,16 +52,12 @@ mt-4
 border
 border-gray-100
 rounded-lg
-bg-gray-50
 md:flex-row
 md:space-x-8
 md:mt-0
 md:text-sm
 md:font-medium
 md:border-0
-md:bg-white
-dark:bg-gray-800
-md:dark:bg-gray-900
 dark:border-gray-700
 `;
 
@@ -96,6 +95,20 @@ md:dark:hover:bg-transparent
 `;
 
 export default function Navbar() {
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    if (dark) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [dark]);
+
+  function toggleDark() {
+    setDark((dark) => !dark);
+  }
+
   return (
     <NavbarContainer>
       <NavbarDiv>
@@ -106,14 +119,13 @@ export default function Navbar() {
             alt="Euro Rhee Logo"
           /> */}
           <svg
-            fill="#000000"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 512 512"
             xmlSpace="preserve"
-            className="h-6 mr-3 sm:h-9"
+            className="h-6 mr-3 sm:h-9 fill-black dark:fill-white"
           >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
@@ -147,6 +159,7 @@ export default function Navbar() {
           <button
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-meduim rounded-lg text-sm px-3 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring--800"
+            onClick={toggleDark}
           >
             🌙
           </button>
