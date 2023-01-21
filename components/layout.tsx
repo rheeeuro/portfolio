@@ -5,7 +5,7 @@ import tw from "tailwind-styled-components";
 const LayoutContainer = tw.div`
 bg-orange-50
 dark:bg-[#202023]
-h-screen
+min-h-screen
 `;
 
 const ChildrenContainer = tw.div`

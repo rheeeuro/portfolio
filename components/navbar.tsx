@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
 
@@ -30,15 +31,60 @@ flex
 items-center
 `;
 
+const Title = tw.span`
+self-center
+text-xl
+font-semibold
+whitespace-nowrap
+dark:text-white
+`;
+
+const DarkModeButton = tw.button`
+text-black
+bg-purple-700
+hover:bg-purple-800
+focus:ring-4
+focus:outline-none
+focus:ring-purple-300
+font-meduim
+rounded-lg
+text-sm
+px-3
+py-2.5
+text-center
+mr-3
+md:mr-0
+dark:bg-orange-300
+dark:hover:bg-orange-400
+dark:focus:ring-orange-500
+`;
+
+const MenuOpenButton = tw.button`
+inline-flex
+items-center
+p-2
+text-sm
+text-gray-500
+rounded-lg
+md:hidden
+hover:bg-gray-100
+focus:outline-none
+focus:ring-2
+focus:ring-gray-200
+dark:text-gray-400
+dark:hover:bg-gray-700
+dark:focus:ring-gray-600
+`;
+
 const ButtonContainer = tw.div`
 flex
 md:order-2
 `;
 
-const MenuContainer = tw.div`
+const MenuContainer = tw(motion.div)`
 items-center
 justify-between
-hidden w-full
+w-full
 md:flex
 md:w-auto
 md:order-1
@@ -50,7 +96,7 @@ flex-col
 p-4
 mt-4
 border
-border-gray-100
+border-gray-300
 rounded-lg
 md:flex-row
 md:space-x-8
@@ -94,8 +140,41 @@ dark:hover:text-white
 md:dark:hover:bg-transparent
 `;
 
+const openedDropdown = {
+  from: {
+    height: 0,
+    opacity: 0,
+    scaleY: 0,
+  },
+  to: {
+    height: "auto",
+    opacity: 1,
+    scaleY: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+const closedDropdown = {
+  from: {
+    height: "auto",
+    opacity: 1,
+    scaleY: 1,
+  },
+  to: {
+    height: 0,
+    opacity: 0,
+    scaleY: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 export default function Navbar() {
   const [dark, setDark] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     if (dark) {
@@ -109,15 +188,14 @@ export default function Navbar() {
     setDark((dark) => !dark);
   }
 
+  function toggleOpen() {
+    setMenuOpen((menuOpen) => !menuOpen);
+  }
+
   return (
     <NavbarContainer>
       <NavbarDiv>
         <Logo>
-          {/* <img
-            src="https://www.svgrepo.com/show/253758/coin-euro.svg"
-            className="h-6 mr-3 sm:h-9"
-            alt="Euro Rhee Logo"
-          /> */}
           <svg
             version="1.1"
             id="Layer_1"
@@ -125,7 +203,7 @@ export default function Navbar() {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 512 512"
             xmlSpace="preserve"
-            className="h-6 mr-3 sm:h-9 fill-black dark:fill-white"
+            className="h-6 mr-3 sm:h-9 fill-black dark:fill-white hover:rotate-12"
           >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
@@ -151,25 +229,13 @@ export default function Navbar() {
               </g>
             </g>
           </svg>
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Euro Rhee
-          </span>
+          <Title>Euro Rhee</Title>
         </Logo>
         <ButtonContainer>
-          <button
-            type="button"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-meduim rounded-lg text-sm px-3 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring--800"
-            onClick={toggleDark}
-          >
-            🌙
-          </button>
-          <button
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
+          <DarkModeButton onClick={toggleDark}>
+            {dark ? "☀︎" : "🌙"}
+          </DarkModeButton>
+          <MenuOpenButton onClick={toggleOpen}>
             <span className="sr-only">Open main menu</span>
             <svg
               className="w-6 h-6"
@@ -184,9 +250,14 @@ export default function Navbar() {
                 clipRule="evenodd"
               ></path>
             </svg>
-          </button>
+          </MenuOpenButton>
         </ButtonContainer>
-        <MenuContainer id="navbar-cta">
+        <MenuContainer
+          id="navbar-cta"
+          variants={menuOpen ? openedDropdown : closedDropdown}
+          initial="from"
+          animate="to"
+        >
           <MenuUl>
             <li>
               <NavListAnchorSelected href="#" aria-current="page">
