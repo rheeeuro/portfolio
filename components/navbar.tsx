@@ -1,19 +1,20 @@
-import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
 
 const NavbarContainer = tw.nav`
+fixed
+w-full
 border-gray-200
 px-2
 sm:px-4
 py-2.5
 rounded
-bg-white
-bg-opacity-25
-dark:bg-[#202023]
-dark:bg-opacity-100
+bg-[#ffffff40]
+dark:bg-[#20202050]
 transition-colors
+z-10
+backdrop-blur-md
 `;
 
 const NavbarDiv = tw.div`
@@ -87,6 +88,7 @@ md:order-2
 const MenuContainer = tw(motion.div)`
 items-center
 justify-between
+
 w-full
 md:flex
 md:w-auto
@@ -102,6 +104,8 @@ mt-4
 border
 border-gray-300
 rounded-lg
+bg-orange-50
+md:bg-transparent
 md:flex-row
 md:space-x-8
 md:mt-0
@@ -193,11 +197,11 @@ export default function Navbar() {
             xmlSpace="preserve"
             className="h-6 mr-3 sm:h-9 fill-black dark:fill-white hover:rotate-12"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <g>
@@ -252,13 +256,16 @@ export default function Navbar() {
               </NavListAnchorSelected>
             </li>
             <li>
-              <NavListAnchor href="#">About</NavListAnchor>
-            </li>
-            <li>
               <NavListAnchor href="/work">Works</NavListAnchor>
             </li>
             <li>
-              <NavListAnchor href="#">View Source</NavListAnchor>
+              <NavListAnchor
+                href="https://github.com/rheeeuro/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Source
+              </NavListAnchor>
             </li>
           </MenuUl>
         </MenuContainer>

@@ -72,7 +72,7 @@ dark:text-white
 
 const SubTitleDescription = tw.p`
 mt-6
-text-medium
+text-md
 font-medium
 text-gray-700
 dark:text-white
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
       <SubTitleContainer>
         <SubTitle>I Like</SubTitle>
         <SubTitleDescription>
-          Development, Video Editing, Game, Movie
+          Development, Video Editing, Game, Watching Movie, Drawing
         </SubTitleDescription>
       </SubTitleContainer>
     </Layout>

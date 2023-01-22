@@ -3,12 +3,15 @@ import Navbar from "./navbar";
 import tw from "tailwind-styled-components";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import Footer from "./footer";
 
 const LayoutContainer = tw.div`
 bg-orange-50
 dark:bg-[#202023]
 min-h-screen
 transition-colors
+text-gray-900
+dark:text-white
 `;
 
 const ChildrenContainer = tw(motion.div)`
@@ -16,6 +19,7 @@ w-full
 max-w-2xl
 mx-auto
 p-4
+pt-20
 `;
 
 const childrenAnimate = {
@@ -55,6 +59,7 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </ChildrenContainer>
       </AnimatePresence>
+      <Footer />
     </LayoutContainer>
   );
 }
