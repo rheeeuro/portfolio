@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import tw from "tailwind-styled-components";
 
@@ -12,6 +13,7 @@ bg-white
 bg-opacity-25
 dark:bg-[#202023]
 dark:bg-opacity-100
+transition-colors
 `;
 
 const NavbarDiv = tw.div`
@@ -57,6 +59,7 @@ md:mr-0
 dark:bg-orange-300
 dark:hover:bg-orange-400
 dark:focus:ring-orange-500
+translate-color
 `;
 
 const MenuOpenButton = tw.button`
@@ -88,6 +91,7 @@ w-full
 md:flex
 md:w-auto
 md:order-1
+md:transition-none
 `;
 
 const MenuUl = tw.ul`
@@ -140,32 +144,16 @@ dark:hover:text-white
 md:dark:hover:bg-transparent
 `;
 
-const openedDropdown = {
-  from: {
+const dropdown = {
+  close: {
     height: 0,
     opacity: 0,
     scaleY: 0,
   },
-  to: {
+  open: {
     height: "auto",
     opacity: 1,
     scaleY: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-
-const closedDropdown = {
-  from: {
-    height: "auto",
-    opacity: 1,
-    scaleY: 1,
-  },
-  to: {
-    height: 0,
-    opacity: 0,
-    scaleY: 0,
     transition: {
       duration: 1,
     },
@@ -174,7 +162,7 @@ const closedDropdown = {
 
 export default function Navbar() {
   const [dark, setDark] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   useEffect(() => {
     if (dark) {
@@ -253,14 +241,13 @@ export default function Navbar() {
           </MenuOpenButton>
         </ButtonContainer>
         <MenuContainer
-          id="navbar-cta"
-          variants={menuOpen ? openedDropdown : closedDropdown}
-          initial="from"
-          animate="to"
+          variants={dropdown}
+          initial={false}
+          animate={menuOpen ? "open" : "close"}
         >
           <MenuUl>
             <li>
-              <NavListAnchorSelected href="#" aria-current="page">
+              <NavListAnchorSelected href="/" aria-current="page">
                 Home
               </NavListAnchorSelected>
             </li>
@@ -268,7 +255,7 @@ export default function Navbar() {
               <NavListAnchor href="#">About</NavListAnchor>
             </li>
             <li>
-              <NavListAnchor href="#">Works</NavListAnchor>
+              <NavListAnchor href="/work">Works</NavListAnchor>
             </li>
             <li>
               <NavListAnchor href="#">View Source</NavListAnchor>
