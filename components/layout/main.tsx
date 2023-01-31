@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { Box, Container } from "@chakra-ui/react";
 import Navbar from "../navbar";
+import { Router } from "next/router";
 interface MainProps {
   children: React.ReactNode;
-  router: any;
+  router: Router;
 }
 
 const Main = ({ children, router }: MainProps) => {
@@ -11,6 +12,8 @@ const Main = ({ children, router }: MainProps) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Rhee Euro's portfolio homepage" />
+        <meta name="author" content="Rhee Euro" />
         <title>Rhee Euro - Homepage</title>
       </Head>
       <Navbar path={router.asPath} />
