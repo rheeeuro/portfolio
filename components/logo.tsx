@@ -9,12 +9,12 @@ inline-flex
 items-center
 h-7.5
 p-2.5
-hover:first:rotate-20
+hover:rotate-[20]
 `;
 
 const Logo = () => {
   return (
-    <Link href={"/"}>
+    <Link href="/">
       <LogoBox>
         <svg
           version="1.1"
@@ -23,7 +23,7 @@ const Logo = () => {
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 512 512"
           xmlSpace="preserve"
-          className={`h-6 mr-3 sm:h-9 hover:rotate-12 ${useColorModeValue(
+          className={`h-6 mr-3 sm:h-9 ${useColorModeValue(
             "fill-black",
             "fill-white"
           )}`}
