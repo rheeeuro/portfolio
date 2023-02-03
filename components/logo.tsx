@@ -23,7 +23,7 @@ const Logo = () => {
           xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 512 512"
           xmlSpace="preserve"
-          className={`h-6 mr-3 sm:h-9 ${useColorModeValue(
+          className={`h-7 mr-1 ${useColorModeValue(
             "fill-black",
             "fill-white"
           )}`}

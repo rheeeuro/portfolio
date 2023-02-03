@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 interface SectionProps {
   children: ReactNode;
-  delay: any;
+  delay?: any;
 }
 
 const SectionContainer = chakra(motion.div, {
