@@ -117,9 +117,6 @@ const Navbar = (props: NavbarProps) => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={Link} href="/">
-                  About
-                </MenuItem>
                 <MenuItem as={Link} href="/works">
                   Works
                 </MenuItem>
