@@ -12,10 +12,7 @@ const Room = () => {
   const refContainer = useRef<HTMLDivElement>(null);
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef<THREE.WebGLRenderer>();
-  const urlDogGLB =
-    (process.env.NODE_ENV === "production"
-      ? "https://craftzdog.global.ssl.fastly.net/homepage"
-      : "") + "/room.glb";
+  const urlDogGLB = "/room.glb";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
