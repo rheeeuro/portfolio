@@ -17,6 +17,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./themeToggleButton";
 import { HTMLAttributeAnchorTarget, ReactNode } from "react";
+import { IoLogoGithub } from "react-icons/io5";
 
 interface LinkItemProps {
   href?: string | undefined;
@@ -101,7 +102,8 @@ const Navbar = (props: NavbarProps) => {
             style={{ gap: 4 }}
             pl={2}
           >
-            View Source
+            <IoLogoGithub />
+            Source
           </LinkItem>
         </Stack>
         <Box flex={1} textAlign="right">

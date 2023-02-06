@@ -4,6 +4,7 @@ import Navbar from "../navbar";
 import { Router } from "next/router";
 import Room from "../room";
 import NoSsr from "../noSsr";
+import Footer from "../footer";
 interface MainProps {
   children: React.ReactNode;
   router: Router;
@@ -24,6 +25,7 @@ const Main = ({ children, router }: MainProps) => {
           <Room />
         </NoSsr>
         {children}
+        <Footer />
       </Container>
     </Box>
   );
