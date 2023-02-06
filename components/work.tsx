@@ -1,6 +1,5 @@
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Badge, Box, Heading, Image } from "@chakra-ui/react";
-import Link from "next/link";
+import { Badge, Box, Heading, Image, Link } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface TitleProps {

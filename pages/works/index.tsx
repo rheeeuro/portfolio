@@ -2,15 +2,15 @@ import { WorkGridItem } from "@/components/gridItem";
 import Section from "@/components/section";
 import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
 
-import thumbScenarioBuilder from "@/public/images/scenarioBUilder.png";
-import thumbSpineSlicer from "@/public/images/spineSlicer.png";
-import thumbProfileFinder from "@/public/images/profileFinder.png";
-import thumbGEscape from "@/public/images/gEscape.png";
-import thumbGStore from "@/public/images/gStore.png";
+import thumbScenarioBuilder from "@/public/images/scenariobuilder.png";
+import thumbSpineSlicer from "@/public/images/spineslicer.png";
+import thumbProfileFinder from "@/public/images/profilefinder.png";
+import thumbGEscape from "@/public/images/gescape.png";
+import thumbGStore from "@/public/images/gstore.png";
 import thumbJoyrun from "@/public/images/joyrun.png";
-import thumbCPosture from "@/public/images/cPosture.png";
-import thumbMiPhone from "@/public/images/miPhone.png";
-import thumbGFlight from "@/public/images/gFlight.png";
+import thumbCPosture from "@/public/images/cposture.png";
+import thumbMiPhone from "@/public/images/miphone.png";
+import thumbGFlight from "@/public/images/gflight.png";
 import Layout from "@/components/layout/article";
 
 const Works = () => {
