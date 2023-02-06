@@ -10,8 +10,12 @@ import {
   Image,
   useColorModeValue,
   Button,
+  List,
+  ListItem,
+  Icon,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import { IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -115,6 +119,35 @@ const Home = () => {
             Hobby
           </Heading>
           <Paragraph>Development, Movie, Edit Video, Drawing, Music</Paragraph>
+        </Section>
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            Social Media
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/rheeeuro" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @rheeeuro
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com/2.euro" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @2.euro
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
