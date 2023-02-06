@@ -1,9 +1,29 @@
 import { Box, LinkBox, LinkOverlay, Text } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { ReactNode } from "react";
 
-export const GridItem = ({ children, href, title, thumbnail }) => (
+interface GridItemProps {
+  children: ReactNode;
+  href?: string;
+  title: string;
+  thumbnail: StaticImageData;
+}
+
+interface WorkGridItemProps {
+  children: ReactNode;
+  id: string;
+  title: string;
+  thumbnail: StaticImageData;
+}
+
+export const GridItem = ({
+  children,
+  href,
+  title,
+  thumbnail,
+}: GridItemProps) => (
   <Box w="100%" alignItems="center">
     <LinkBox cursor="pointer">
       <Image
@@ -21,8 +41,13 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 );
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" alignItems="center">
+export const WorkGridItem = ({
+  children,
+  id,
+  title,
+  thumbnail,
+}: WorkGridItemProps) => (
+  <Box w="100%" textAlign="center">
     <LinkBox as={Link} href={`works/${id}`} scroll={false} cursor="pointer">
       <Image
         src={thumbnail}

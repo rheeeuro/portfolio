@@ -2,15 +2,15 @@ import { WorkGridItem } from "@/components/gridItem";
 import Section from "@/components/section";
 import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
 
-import thumbScenarioBuilder from "../public/images/scenarioBUilder.png";
-import thumbSpineSlicer from "../public/images/spineSlicer.png";
-import thumbProfileFinder from "../public/images/profileFinder.png";
-import thumbGEscape from "../public/images/gEscape.png";
-import thumbGStore from "../public/images/gStore.png";
-import thumbJoyrun from "../public/images/joyrun.png";
-import thumbCPosture from "../public/images/cPosture.png";
-import thumbMiPhone from "../public/images/miPhone.png";
-import thumbGFlight from "../public/images/gFlight.png";
+import thumbScenarioBuilder from "@/public/images/scenarioBUilder.png";
+import thumbSpineSlicer from "@/public/images/spineSlicer.png";
+import thumbProfileFinder from "@/public/images/profileFinder.png";
+import thumbGEscape from "@/public/images/gEscape.png";
+import thumbGStore from "@/public/images/gStore.png";
+import thumbJoyrun from "@/public/images/joyrun.png";
+import thumbCPosture from "@/public/images/cPosture.png";
+import thumbMiPhone from "@/public/images/miPhone.png";
+import thumbGFlight from "@/public/images/gFlight.png";
 import Layout from "@/components/layout/article";
 
 const Works = () => {
@@ -24,29 +24,32 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="scenarioBuilder"
+              id="scenariobuilder"
               title="ScenarioBuilder"
               thumbnail={thumbScenarioBuilder}
             >
-              시나리오빌더 설명
+              A platform that allows the customer representative to directly
+              implement the voice bot scenario.
             </WorkGridItem>
           </Section>
           <Section>
             <WorkGridItem
-              id="spineSlicer"
+              id="spineslicer"
               title="SpineSlicer"
               thumbnail={thumbSpineSlicer}
             >
-              척추수술모듈 설명
+              Software that uses two types of sensors simultaneously to match CT
+              and C-arm to assist spinal surgery
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
             <WorkGridItem
-              id="profileFinder"
+              id="profilefinder"
               title="Profile-Finder"
               thumbnail={thumbProfileFinder}
             >
-              프로필파인더 설명
+              Actor job search service with deep learning keyword filtering
+              function
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
@@ -55,17 +58,20 @@ const Works = () => {
               title="G-Escape"
               thumbnail={thumbGEscape}
             >
-              gescape 설명
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.2}>
-            <WorkGridItem id="gstore" title="GStore" thumbnail={thumbGStore}>
-              gstore 설명
+              3D/VR Room Escape Game
             </WorkGridItem>
           </Section>
           <Section delay={0.2}>
             <WorkGridItem id="joyrun" title="JoyRun" thumbnail={thumbJoyrun}>
-              joyrun 설명
+              An exhibition game that allows users to run directly to avoid
+              obstacles and manipulate the UI of the floor projector with their
+              feet.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
+            <WorkGridItem id="gstore" title="GStore" thumbnail={thumbGStore}>
+              An app that allows you to search and favorite Gyeonggi local
+              currency merchants.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -78,16 +84,19 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <WorkGridItem
-              id="cPosture"
+              id="cposture"
               title="cPosture"
               thumbnail={thumbCPosture}
             >
-              cposture 설명
+              Web service that uses Webcam to measure posture in real time and
+              coach stretching.
             </WorkGridItem>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem id="miPhone" title="miPhone" thumbnail={thumbMiPhone}>
-              miphone 설명
+            <WorkGridItem id="miphone" title="miPhone" thumbnail={thumbMiPhone}>
+              Web service that allows you to compare information such as price,
+              OS, size, weight, appearance, display, performance, camera,
+              battery, etc. of a smartphone
             </WorkGridItem>
           </Section>
           <Section delay={0.4}>
@@ -96,7 +105,7 @@ const Works = () => {
               title="G-Flight"
               thumbnail={thumbGFlight}
             >
-              gflight 설명
+              Airplane games visualizing Quad Tree and Prim Algorithm
             </WorkGridItem>
           </Section>
         </SimpleGrid>

@@ -1,6 +1,7 @@
 import { easeInOut, motion } from "framer-motion";
 import Head from "next/head";
 import { relative } from "path";
+import { ReactNode } from "react";
 import { GridItemStyle } from "../gridItem";
 
 const variants = {
@@ -9,7 +10,12 @@ const variants = {
   exit: { opacity: 0, x: 0, y: 20 },
 };
 
-const Layout = ({ children, title }) => (
+interface LayoutProps {
+  children: ReactNode;
+  title?: string;
+}
+
+const Layout = ({ children, title }: LayoutProps) => (
   <motion.article
     initial="hidden"
     animate="enter"

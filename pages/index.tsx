@@ -46,7 +46,7 @@ const Home = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/euro.jpg"
+              src="/images/euro.jpeg"
               alt="Profile image"
             />
           </Box>
@@ -55,13 +55,11 @@ const Home = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>
-            I want to be a full-stack developer, PM and developer who can
-            communicate well. I want to create a service that provides new
-            experiences in people&apos;s lives with development skills to
-            improve with my ideas. I want to improve my ability by interacting
-            with team members in each sector, understanding different ideas, and
-            thinking about what developers need to do to make a better service.
+          <Paragraph className="indent-0">
+            I&apos;m Euro Rhee, a passionate frontend developer.
+            <br /> I like to receive feedback and improve the projects.
+            <br /> I want to be a planner and developer who can communicate
+            well.
           </Paragraph>
           <Box textAlign="center" my={4}>
             <Link href="/works">
@@ -114,7 +112,7 @@ const Home = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥︎
+            Hobby
           </Heading>
           <Paragraph>Development, Movie, Edit Video, Drawing, Music</Paragraph>
         </Section>
