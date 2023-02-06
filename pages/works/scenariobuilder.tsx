@@ -24,7 +24,7 @@ const Work = () => {
             React, Typescript, Spring Boot
           </ListItem>
         </List>
-        <WorkImage src="/images/scenarioBuilder.png" alt="scenariobuilder" />
+        <WorkImage src="/images/scenariobuilder.png" alt="scenariobuilder" />
         <Paragraph>
           From December 2021, as an intern at Kakao Enterprise&apos;s solution
           platform team, I participated in the KICC DA Framework project. We
