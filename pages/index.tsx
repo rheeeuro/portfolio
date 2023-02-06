@@ -28,7 +28,7 @@ const Home = () => {
           mb={6}
           textAlign="center"
         >
-          Hello, I&apos;m a full-stack developer based in Korea!
+          Hello, I&apos;m a frontend developer based in Korea!
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
