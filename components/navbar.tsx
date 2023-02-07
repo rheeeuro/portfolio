@@ -117,12 +117,16 @@ const Navbar = (props: NavbarProps) => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={Link} href="/works">
+                <MenuItem as={NextLink} href="/">
+                  Home
+                </MenuItem>
+                <MenuItem as={NextLink} href="/works">
                   Works
                 </MenuItem>
                 <MenuItem
-                  as={Link}
+                  as={NextLink}
                   href="https://github.com/rheeeuro/portfolio"
+                  target="_blank"
                 >
                   View Source
                 </MenuItem>
