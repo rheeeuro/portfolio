@@ -28,8 +28,7 @@ const Works = () => {
               title="ScenarioBuilder"
               thumbnail={thumbScenarioBuilder}
             >
-              A platform that allows the customer representative to directly
-              implement the voice bot scenario.
+              고객사가 직접 보이스봇 시나리오를 생성, 편집할 수 있는 플랫폼
             </WorkGridItem>
           </Section>
           <Section>
@@ -38,8 +37,8 @@ const Works = () => {
               title="SpineSlicer"
               thumbnail={thumbSpineSlicer}
             >
-              Software that uses two types of sensors simultaneously to match CT
-              and C-arm to assist spinal surgery
+              광학식, 자기식 센서를 동시에 이용해 CT 데이터와 C-arm데이터를 한
+              번에 확인할 수 있는 척추 수술 보조용 네이게이션 소프트웨어
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
@@ -48,8 +47,7 @@ const Works = () => {
               title="Profile-Finder"
               thumbnail={thumbProfileFinder}
             >
-              Actor job search service with deep learning keyword filtering
-              function
+              딥러닝 키워드 필터링 시스템을 이용한 배우 구인구직 서비스 플랫폼
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
@@ -58,20 +56,18 @@ const Works = () => {
               title="G-Escape"
               thumbnail={thumbGEscape}
             >
-              3D/VR Room Escape Game
+              3D/VR 방탈출 게임
             </WorkGridItem>
           </Section>
           <Section delay={0.2}>
             <WorkGridItem id="joyrun" title="JoyRun" thumbnail={thumbJoyrun}>
-              An exhibition game that allows users to run directly to avoid
-              obstacles and manipulate the UI of the floor projector with their
-              feet.
+              Azure Kinect Depth Sensor를 활용해 발로 바닥 스크린의 UI를
+              조작하는 전시회용 달리기 게임
             </WorkGridItem>
           </Section>
           <Section delay={0.2}>
             <WorkGridItem id="gstore" title="GStore" thumbnail={thumbGStore}>
-              An app that allows you to search and favorite Gyeonggi local
-              currency merchants.
+              경기 지역화폐 가맹점 찾기 어플
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -88,15 +84,13 @@ const Works = () => {
               title="cPosture"
               thumbnail={thumbCPosture}
             >
-              Web service that uses Webcam to measure posture in real time and
-              coach stretching.
+              실시간 웹캠으로 사용자의 자세를 측정하고 스트레칭을 가이드해주는
+              서비스
             </WorkGridItem>
           </Section>
           <Section delay={0.3}>
             <WorkGridItem id="miphone" title="miPhone" thumbnail={thumbMiPhone}>
-              Web service that allows you to compare information such as price,
-              OS, size, weight, appearance, display, performance, camera,
-              battery, etc. of a smartphone
+              스마트폰 스펙 비교 사이트
             </WorkGridItem>
           </Section>
           <Section delay={0.4}>
@@ -105,7 +99,7 @@ const Works = () => {
               title="G-Flight"
               thumbnail={thumbGFlight}
             >
-              Airplane games visualizing Quad Tree and Prim Algorithm
+              HTML Canvas를 이용한 쿼드트리 시각화 비행기 게임
             </WorkGridItem>
           </Section>
         </SimpleGrid>

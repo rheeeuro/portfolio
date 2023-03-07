@@ -28,12 +28,12 @@ const Home = () => {
           mb={6}
           textAlign="center"
         >
-          Hello, I&apos;m a frontend developer based in Korea!
+          안녕하세요, 저는 프론트엔드 개발자 이유로 입니다.
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Rhee Euro
+              이유로 (Rhee Euro)
             </Heading>
             <p>Frontend Developer</p>
           </Box>
@@ -60,15 +60,16 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph className="indent-0">
-            I&apos;m Euro Rhee, a passionate frontend developer.
-            <br /> I like to receive feedback and improve the projects.
-            <br /> I want to be a planner and developer who can communicate
-            well.
+            저는 프론트엔드 개발자 이유로 입니다.
+            <br /> 원활한 커뮤니케이션을 할 수 있는 기획자이자 개발자가 되고
+            싶습니다.
+            <br /> 저의 아이디어와 함께 향상 시킬 개발 실력으로 사람들의 삶에
+            새로운 경험을 제공하는 서비스를 만들고 싶습니다.
           </Paragraph>
           <Box textAlign="center" my={4}>
             <Link href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My Portfolio
+                포트폴리오 보기
               </Button>
             </Link>
           </Box>
@@ -79,39 +80,37 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear>1996</BioYear>
-            Born in Seoul, Korea.
+            서울 은평구 출생
           </BioSection>
           <BioSection>
             <BioYear>2015</BioYear>
-            Graduate <b>Ewha Womans University HighSchool</b>
+            <b>이화여자대학교 사범대학 부속이화금란고등학교</b> 졸업
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Worked at{" "}
             <a
               href="http://gmeditec.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <b>Gmeditec</b>
+              <b>지메디텍</b>
             </a>{" "}
-            as an undergraduate researcher
+            학부생연구원
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Graduate <b>Gachon University</b> (Department of Software)
+            <b>가천대학교</b> 소프트웨어학과 졸업
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Worked at{" "}
             <a
               href="https://kakaoenterprise.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <b>Kakao Enterprise</b>
+              <b>카카오엔터프라이즈</b>
             </a>{" "}
-            Solution Platform Team as an intern
+            솔루션플랫폼팀 인턴
           </BioSection>
         </Section>
         <Section delay={0.3}>
@@ -119,7 +118,7 @@ const Home = () => {
             Hobby
           </Heading>
           <Paragraph>
-            Development, Movie, Edit Video, Game, Drawing, Music
+            개발, 영화감상, 영상편집, 게임, 그림그리기, 음악감상 등
           </Paragraph>
         </Section>
         <Section delay={0.4}>
