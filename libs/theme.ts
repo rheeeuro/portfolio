@@ -33,7 +33,10 @@ const components = {
   },
 };
 
-const fonts = { heading: "'M PLUS ROunded 1c'" };
+const fonts = {
+  heading: "'Gowun Dodum', sans-serif",
+  body: "'Gowun Dodum', sans-serif",
+};
 
 const colors = { grassTeal: "#88ccca" };
 
