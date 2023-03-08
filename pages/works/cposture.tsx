@@ -12,8 +12,8 @@ const Work = () => {
           C-posture <Badge>2020</Badge>
         </Title>
         <p>
-          Web service that uses Webcam to measure posture in real time and coach
-          stretching.
+          실시간 웹캠으로 사용자의 자세를 측정하고 스트레칭을 가이드해주는
+          서비스
         </p>
         <List ml={4} my={4}>
           <ListItem>
@@ -41,13 +41,16 @@ const Work = () => {
         </List>
         <WorkImage src="/images/cposture.png" alt="cposture" />
         <Paragraph>
-          The 2020 software engineering class project This is a posture
-          correction and stretching trainer service. It was conducted as a team
-          of 3 people and measured the user&apos;s Skeleton posture in real time
-          using ml5 and TensorFlow poseNet, and used Google Teachable Machine.
-          Correct the stretching posture. I took charge of the overall part of
-          coding, and I took a picture of the stretching posture myself, learned
-          it, and applied it to the site.
+          2020년 소프트웨어공학 수업 프로젝트로 진행한 자세 교정 및 스트레칭
+          트레이너 서비스 입니다. 3명의 팀으로 진행했고 ml5와 TensorFlow
+          poseNet을 이용해 실시간으로 사용자의 Skeleton 자세를 측정하고, Google
+          Teachable Machine을 이용해 스트레칭 자세를 교정합니다. 코딩의 전반적인
+          부분을 도맡아 했으며 직접 스트레칭 자세를 촬영해가며 학습시켜 사이트에
+          적용시켰습니다.
+        </Paragraph>
+        <Paragraph>
+          처음으로 프로젝트를 진행하면서 Model과 Pattern을 구상하고, Unit 테스트
+          등 절차 위주로 레포트를 작성하고 진행해본 프로젝트였습니다.
         </Paragraph>
       </Container>
     </Layout>

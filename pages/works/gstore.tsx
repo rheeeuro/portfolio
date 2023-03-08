@@ -11,10 +11,7 @@ const Work = () => {
         <Title>
           GStore <Badge>2020</Badge>
         </Title>
-        <p>
-          An app that allows you to search and favorite Gyeonggi local currency
-          merchants.
-        </p>
+        <p>경기 지역화폐 가맹점 찾기 어플</p>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>App store</Meta>
@@ -51,11 +48,11 @@ const Work = () => {
         </List>
         <WorkImage src="/images/gstore.png" alt="gstore" />
         <Paragraph>
-          It was conducted as a 2020 mobile programming class project and is an
-          application that allows you to search and favorite Gyeonggi local
-          currency merchants. It was a team of 4 people. I produced an Android
-          app using Gyeonggi Data Dream API and Kakao Map API, and I was able to
-          experience uploading it to the Play Store myself.
+          2020년 모바일 프로그래밍 수업 프로젝트로 진행했으며 경기지역화폐
+          가맹점들을 검색하고 즐겨찾기 할 수 있는 어플입니다. 4명의 팀으로
+          진행했으며, 경기데이터드림 API와 카카오 맵 API를 이용하여 안드로이드
+          앱을 제작했으며 직접 플레이스토어에 올려보는 경험을 해볼 수
+          있었습니다.
         </Paragraph>
       </Container>
     </Layout>

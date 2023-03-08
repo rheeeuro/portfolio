@@ -12,8 +12,8 @@ const Work = () => {
           SpineSlicer <Badge>2021</Badge>
         </Title>
         <p>
-          Software that uses two types of sensors simultaneously to match CT and
-          C-arm to assist spinal surgery
+          광학식, 자기식 센서를 동시에 이용해 CT 데이터와 C-arm데이터를 한 번에
+          확인할 수 있는 척추 수술 보조용 네이게이션 소프트웨어
         </p>
         <List ml={4} my={4}>
           <ListItem>
@@ -38,14 +38,13 @@ const Work = () => {
         </List>
         <WorkImage src="/images/spineslicer.png" alt="spineslicer" />
         <Paragraph>
-          In 2021, I was in charge of Gmeditec&apos;s development project
-          through the Visualization and Mixed Reality Lab of Gachon University.
-          Using Optical Sensor (OptiTrack) and Magnetic Sensor (NDI Aurora), It
-          is a software that assists spinal surgery by matching the coordinates
-          of surgical tools, CT, and C-arm. Made with Slicer and Python and
-          referenced the matching module of SlicerIGT. We have developed a
-          matching process between sensors and a matching algorithm between
-          2D-3D and are registered as the third author of a related paper.
+          2021년 가천대학교 VMR 랩(Visualization and Mixed Reality Lab)을 통해
+          Gmeditec의 개발 프로젝트를 맡아 진행하게 되었습니다. 광학식
+          센서(OptiTrack)과 자기식 센서(NDI Aurora)를 이용하여 수술도구와 CT,
+          C-arm의 좌표를 정합 하여 척추 수술을 보조하는 소프트웨어입니다.
+          Slicer와 Python으로 제작했고, SlicerIGT의 정합 모듈을 참조했습니다.
+          센서 간의 정합 프로세스와 2D-3D 간의 정합 알고리즘을 개발했고 관련
+          논문의 3저자로 등록되어 있습니다.
         </Paragraph>
       </Container>
     </Layout>

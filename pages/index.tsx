@@ -133,7 +133,7 @@ const Home = () => {
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  @rheeeuro
+                  rheeeuro
                 </Button>
               </Link>
             </ListItem>

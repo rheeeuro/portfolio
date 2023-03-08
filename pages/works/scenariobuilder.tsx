@@ -10,10 +10,7 @@ const Work = () => {
         <Title>
           ScenarioBuilder <Badge>2022</Badge>
         </Title>
-        <p>
-          A platform that allows the customer representative to directly
-          implement the voice bot scenario.
-        </p>
+        <p>고객사가 직접 보이스봇 시나리오를 생성, 편집할 수 있는 플랫폼</p>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -26,14 +23,13 @@ const Work = () => {
         </List>
         <WorkImage src="/images/scenariobuilder.png" alt="scenariobuilder" />
         <Paragraph>
-          From December 2021, as an intern at Kakao Enterprise&apos;s solution
-          platform team, I participated in the KICC DA Framework project. We
-          have supported SaaS distribution so that the customer&apos;s voice bot
-          scenario can be implemented by the customer&apos;s representative
-          without coding. The overall design and implementation of the front end
-          was undertaken. I was responsible for the backend of the customer
-          scenario test. We used Spring boot for back-end, React and TypeScript
-          for front-end.
+          2021년 12월부터 카카오 엔터프라이즈의 솔루션플랫폼 팀 인턴으로 KICC DA
+          Framework 프로젝트에 참여하게 되었습니다. 고객사 보이스 봇의
+          시나리오를 고객사 담당자가 코딩 없이 구현할 수 있도록 SaaS화 하여
+          배포할 수 있도록 지원하였습니다. 전반적인 프론트엔드의 설계 및 구현을
+          도맡아 진행하였고, 고객사 시나리오 테스트의 백엔드를 담당했습니다.
+          Back-end에는 Spring boot, Front-end에는 React와 Typescript를
+          이용했습니다.
         </Paragraph>
       </Container>
     </Layout>

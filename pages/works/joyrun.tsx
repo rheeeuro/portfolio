@@ -12,9 +12,8 @@ const Work = () => {
           JoyRun <Badge>2020</Badge>
         </Title>
         <p>
-          An exhibition game that allows users to run directly to avoid
-          obstacles and manipulate the UI of the floor projector with their
-          feet.
+          Azure Kinect Depth Sensor를 활용해 발로 바닥 스크린의 UI를 조작하는
+          전시회용 달리기 게임
         </p>
         <List ml={4} my={4}>
           <ListItem>
@@ -42,13 +41,17 @@ const Work = () => {
         </List>
         <WorkImage src="/images/joyrun.png" alt="joyrun" />
         <Paragraph>
-          This is a project conducted by an industry-academic cooperation intern
-          in the summer of 2020, and we created a game that scans a human body
-          in 3D with Azure Kinect&apos;s Depth Sensor to avoid obstacles by
-          running directly without much manipulation. It was conducted as a team
-          of 3 people and made using Unity. I was in charge of linking with
-          sensors and improving recognition speed, overall development of games,
-          linking coordinates with floor UI, and managing GitHub. content.
+          2020년 여름 산학협력 인턴에서 진행한 프로젝트로, Azure Kinect의 Depth
+          Sensor로 사람의 몸을 3D로 스캔해 별다른 조작법 없이 직접 달리면서
+          장애물을 피하는 게임을 제작했습니다. 3명의 팀으로 진행하였고 Unity를
+          이용해 만들었습니다. 센서와의 연동과 인식속도 개선, 게임의 전반적인
+          개발, 바닥 UI 발 좌표 연동과 GitHub 관리를 맡았습니다.
+        </Paragraph>
+        <Paragraph>
+          Unity로 개발해야 했으나 3명의 팀원 모두 C#과 Unity가 처음이라 스터디를
+          진행하면서 프로젝트를 진행했습니다. 인턴을 진행하면서 기획서를 확인,
+          체크하고 GitHub의 Milestone 등의 계획 절차를 배울 수 있는 계기가
+          되었습니다.
         </Paragraph>
       </Container>
     </Layout>

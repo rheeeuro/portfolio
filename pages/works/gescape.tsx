@@ -11,7 +11,7 @@ const Work = () => {
         <Title>
           G-Escape <Badge>2020</Badge>
         </Title>
-        <p>3D/VR Room Escape Game</p>
+        <p>3D/VR 방탈출 게임</p>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -45,15 +45,21 @@ const Work = () => {
         </List>
         <WorkImage src="/images/gescape.png" alt="gescape" />
         <Paragraph>
-          This is a 3D VR room escape game conducted as a computer graphics
-          class project in 2020. It was conducted as a team of 3 people and
-          created the game using Three.js. Use Ray casting to give a hint when
-          you click an object. You can get it and escape the room when you get
-          the key. I can play in English and Korean. If VR support is available
-          using WebXR, the game can also be played in VR mode. The placement of
-          objects, the story of the game, hints, etc. It&apos;s a project that I
-          produced with my own ideas and thought about various aspects of
-          content.
+          2020년 컴퓨터 그래픽스 수업 프로젝트로 진행한 3D VR 방 탈출
+          게임입니다. 3명의 팀으로 진행했으며 Three.js을 이용하여 게임을
+          제작했습니다. Ray casting을 이용하여 물체 클릭 시 힌트를 얻을 수
+          있으며 열쇠를 획득 시 방을 탈출할 수 있습니다. 영어와 한국어로 플레이
+          할 수 있으며, WebXR을 이용하여 VR지원이 될 경우 VR모드로도 게임을
+          진행할 수 있습니다. 오브젝트의 배치나 게임의 스토리, 힌트 등도 직접
+          아이디어를 내면서 제작해 컨텐츠 적인 면에도 다양하게 고민해 본
+          프로젝트입니다.
+        </Paragraph>
+        <Paragraph>
+          오브젝트 오픈소스 사이트를 참고하여 장애물과 힌트를 배치시켰고 빛이나
+          손전등 효과, 장애물, 벽과의 충돌이나 상호작용을 직접 구현해 보았으며
+          교수님의 조언으로 VR모드를 추가했습니다. 학과의 날 우수 프로젝트로
+          선정되어 발표및 수상하였으며 학과 연구실 대표 프로젝트로
+          게시되었습니다.
         </Paragraph>
       </Container>
     </Layout>

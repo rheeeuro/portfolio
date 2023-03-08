@@ -7,15 +7,11 @@ import { Badge, Container, Link, List, ListItem } from "@chakra-ui/react";
 const Work = () => {
   return (
     <Layout title="miPhone">
-      <Container>
+      <Container marginBottom={10}>
         <Title>
           miPhone <Badge>2019</Badge>
         </Title>
-        <p>
-          Web service that allows you to compare information such as price, OS,
-          size, weight, appearance, display, performance, camera, battery, etc.
-          of a smartphone
-        </p>
+        <p>스마트폰 스펙 비교 사이트</p>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -42,18 +38,16 @@ const Work = () => {
         </List>
         <WorkImage src="/images/miphone.png" alt="miphone" />
         <Paragraph>
-          This is a smartphone specification comparison web service conducted as
-          a database class project in 2019. It was a project of two people, and
-          it was a project to devise a basic UI and framework using Microsoft
-          Access, but I wanted to create a real web service. I made a suggestion
-          to the professor, and based on Express, Node.js, and MongoDB, I
-          created a web service.
+          2019년 데이터베이스 수업 프로젝트로 진행한 스마트폰 스펙 비교 웹
+          서비스입니다. 2명의 팀으로 진행했고 Microsoft Access를 이용하여
+          기본적인 UI와 틀을 구상해보는 프로젝트였지만 실제 웹서비스를
+          제작해보고 싶다고 교수님께 건의 드렸고, Express와 Node.js, MongoDB를
+          기반으로 웹서비스를 제작했습니다.
         </Paragraph>
         <Paragraph>
-          If you register with your smartphone and comment function with
-          feedback from your peers, Added specification detail search function
-          to change default profile image. Through a vote after the project
-          announcement, It has been selected as an excellent project.
+          동기들의 피드백으로 댓글 기능과 자신의 스마트폰으로 등록 시 기본
+          프로필 이미지가 바뀌도록 설정, 스펙 상세 검색 기능을 추가했습니다.
+          프로젝트 발표 후 투표를 통해 우수 프로젝트로 선정되었습니다.
         </Paragraph>
       </Container>
     </Layout>

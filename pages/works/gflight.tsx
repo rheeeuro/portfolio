@@ -7,11 +7,11 @@ import { Badge, Container, Link, List, ListItem } from "@chakra-ui/react";
 const Work = () => {
   return (
     <Layout title="G-Flight">
-      <Container>
+      <Container marginBottom={10}>
         <Title>
           G-Flight <Badge>2019</Badge>
         </Title>
-        <p>Airplane games visualizing Quad Tree and Prim Algorithm</p>
+        <p>HTML Canvas를 이용한 쿼드트리 시각화 비행기 게임</p>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -38,20 +38,18 @@ const Work = () => {
         </List>
         <WorkImage src="/images/gflight.png" alt="gflight" />
         <Paragraph>
-          The 2019 data structure class project. HTML Canvas game. It&apos;s a
-          Quad Tree and Primalgorithm visualization airplane game that I learned
-          in class. It was conducted as a team of 4 second graders and most of
-          the students only learned C language. The overall implementation has
-          been undertaken.
+          2019년 자료구조 수업 프로젝트로 진행한 HTML Canvas 게임입니다.
+          수업시간에 배운 개념인 Quad Tree 및 Prim algorithm 시각화 비행기
+          게임입니다. 2학년 학생 4명의 팀으로 진행했고 대부분의 학생들이
+          C언어밖에 배우지 못한 상황이어서 구현의 전반적인 부분을 도맡아
+          진행하였습니다.
         </Paragraph>
         <Paragraph>
-          After the project presentation, it was selected as an excellent
-          project, and I got an opportunity to present in front of professors,
-          representatives of many companies, and officials on Software
-          Department Day, and added store functions and ranking systems at the
-          recommendation of the professor. Vanilla JavaScript alone has
-          implemented the functions, UI, and stores of all games, and the
-          ranking has been implemented in MariaDB and PHP.
+          프로젝트 발표 후 우수 프로젝트로 선정되어 소프트웨어 학과의 날
+          교수님들과 많은 기업체 대표님들, 관계자분들 앞에서 발표할 수 있는
+          기회를 얻게 되었고, 교수님의 권유로 상점 기능, 랭킹 시스템을
+          추가했습니다. 바닐라 자바스크립트만으로 모든 게임의 기능, UI, 상점을
+          구현했으며 랭킹은 MariaDB와 PHP로 구현했습니다.
         </Paragraph>
       </Container>
     </Layout>

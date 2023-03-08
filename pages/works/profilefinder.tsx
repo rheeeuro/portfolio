@@ -11,9 +11,7 @@ const Work = () => {
         <Title>
           Profile-Finder <Badge>2021</Badge>
         </Title>
-        <p>
-          Actor job search service with deep learning keyword filtering function
-        </p>
+        <p>딥러닝 키워드 필터링 시스템을 이용한 배우 구인구직 서비스 플랫폼</p>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -60,18 +58,16 @@ const Work = () => {
         </List>
         <WorkImage src="/images/profilefinder.png" alt="profilefinder" />
         <Paragraph>
-          It is a graduation work project conducted by four teams over three
-          semesters from the first semester of 2019 to the first semester of
-          2021. Based on my experience in producing music videos in 2017, I want
-          to improve the problem that it takes too much time to select actor
-          support profiles. We planned a deep learning keyword filtering
-          service. In the first semester, the video staff will select keywords
-          through a survey and crawl images based on celebrity site data for
-          each keyword. Model implementation and accuracy improvement were
-          carried out. In the second semester, I created a test site. In the
-          last semester, we created a web service for actors and actresses as
-          originally planned. The model uses Google Teachable Machine. We
-          created web services with Node.js, Express, MongoDB, and AWS S3.
+          2019년 1학기부터 2021년 1학기까지 3학기에 걸쳐 4명의 팀으로 진행한
+          졸업작품 프로젝트입니다. 2017년 뮤직비디오 제작했던 경험을 바탕으로
+          배우 지원 프로필을 선별하는데 너무 많은 시간이 걸리는 문제점을
+          개선하고자 딥러닝 키워드 필터링 서비스를 기획했습니다. 첫 학기에는
+          영상 관계자분들께 설문조사를 통해 키워드를 선정하고, 키워드 별 연예인
+          사이트 자료를 바탕으로 이미지를 크롤링해 모델 구현 및 정확도 개선을
+          진행했습니다. 두번째 학기에는 테스트 사이트를 제작했고, 마지막
+          학기에는 원래 목표한대로 배우 구인구직 웹서비스를 제작했습니다.
+          모델에는 Google Teachable Machine을 이용했고, Node.js, Express,
+          MongoDB, AWS S3로 웹서비스를 제작했습니다.
         </Paragraph>
       </Container>
     </Layout>
