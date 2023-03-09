@@ -42,11 +42,14 @@ const Work = () => {
         <WorkImage src="/images/cposture.png" alt="cposture" />
         <Paragraph>
           2020년 소프트웨어공학 수업 프로젝트로 진행한 자세 교정 및 스트레칭
-          트레이너 서비스 입니다. 3명의 팀으로 진행했고 ml5와 TensorFlow
-          poseNet을 이용해 실시간으로 사용자의 Skeleton 자세를 측정하고, Google
-          Teachable Machine을 이용해 스트레칭 자세를 교정합니다. 코딩의 전반적인
-          부분을 도맡아 했으며 직접 스트레칭 자세를 촬영해가며 학습시켜 사이트에
-          적용시켰습니다.
+          트레이너 서비스 입니다.
+          <br />
+          3명의 팀으로 진행했고 ml5와 TensorFlow poseNet을 이용해 실시간으로
+          사용자의 Skeleton 자세를 측정하고, Google Teachable Machine을 이용해
+          스트레칭 자세를 교정합니다.
+          <br />
+          코딩의 전반적인 부분을 도맡아 했으며 직접 스트레칭 자세를 촬영해가며
+          학습시켜 사이트에 적용시켰습니다.
         </Paragraph>
         <Paragraph>
           처음으로 프로젝트를 진행하면서 Model과 Pattern을 구상하고, Unit 테스트

@@ -39,14 +39,17 @@ const Work = () => {
         <WorkImage src="/images/miphone.png" alt="miphone" />
         <Paragraph>
           2019년 데이터베이스 수업 프로젝트로 진행한 스마트폰 스펙 비교 웹
-          서비스입니다. 2명의 팀으로 진행했고 Microsoft Access를 이용하여
-          기본적인 UI와 틀을 구상해보는 프로젝트였지만 실제 웹서비스를
-          제작해보고 싶다고 교수님께 건의 드렸고, Express와 Node.js, MongoDB를
-          기반으로 웹서비스를 제작했습니다.
+          서비스입니다.
+          <br />
+          2명의 팀으로 진행했고 Microsoft Access를 이용하여 기본적인 UI와 틀을
+          구상해보는 프로젝트였지만 실제 웹서비스를 제작해보고 싶다고 교수님께
+          건의 드렸고, Express와 Node.js, MongoDB를 기반으로 웹서비스를
+          제작했습니다.
         </Paragraph>
         <Paragraph>
           동기들의 피드백으로 댓글 기능과 자신의 스마트폰으로 등록 시 기본
           프로필 이미지가 바뀌도록 설정, 스펙 상세 검색 기능을 추가했습니다.
+          <br />
           프로젝트 발표 후 투표를 통해 우수 프로젝트로 선정되었습니다.
         </Paragraph>
       </Container>

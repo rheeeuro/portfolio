@@ -39,10 +39,13 @@ const Work = () => {
         <WorkImage src="/images/spineslicer.png" alt="spineslicer" />
         <Paragraph>
           2021년 가천대학교 VMR 랩(Visualization and Mixed Reality Lab)을 통해
-          Gmeditec의 개발 프로젝트를 맡아 진행하게 되었습니다. 광학식
-          센서(OptiTrack)과 자기식 센서(NDI Aurora)를 이용하여 수술도구와 CT,
-          C-arm의 좌표를 정합 하여 척추 수술을 보조하는 소프트웨어입니다.
+          Gmeditec의 개발 프로젝트를 맡아 진행하게 되었습니다.
+          <br />
+          광학식 센서(OptiTrack)과 자기식 센서(NDI Aurora)를 이용하여 수술도구와
+          CT, C-arm의 좌표를 정합 하여 척추 수술을 보조하는 소프트웨어입니다.
+          <br />
           Slicer와 Python으로 제작했고, SlicerIGT의 정합 모듈을 참조했습니다.
+          <br />
           센서 간의 정합 프로세스와 2D-3D 간의 정합 알고리즘을 개발했고 관련
           논문의 3저자로 등록되어 있습니다.
         </Paragraph>

@@ -34,8 +34,8 @@ const components = {
 };
 
 const fonts = {
-  heading: "'Gowun Dodum', sans-serif",
-  body: "'Gowun Dodum', sans-serif",
+  heading: "'Gowun Dodum'",
+  body: "'Gowun Dodum'",
 };
 
 const colors = { grassTeal: "#88ccca" };
