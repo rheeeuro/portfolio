@@ -37,8 +37,8 @@ const Works = () => {
               title="SpineSlicer"
               thumbnail={thumbSpineSlicer}
             >
-              광학식, 자기식 센서를 동시에 이용해 CT 데이터와 C-arm데이터를 한
-              번에 확인할 수 있는 척추 수술 보조용 네이게이션 소프트웨어
+              CT 데이터와 C-arm데이터를 한 번에 확인할 수 있는 척추 수술 보조용
+              네이게이션 소프트웨어
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
