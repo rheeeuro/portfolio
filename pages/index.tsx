@@ -15,7 +15,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoGithub, IoMail } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -123,9 +123,31 @@ const Home = () => {
         </Section>
         <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
-            Social Media
+            Contact
           </Heading>
           <List>
+            <ListItem>
+              <Link href="mailto:rheeeuro@gmail.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  rheeeuro@gmail.com
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="mailto:eurohand@naver.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  eurohand@naver.com
+                </Button>
+              </Link>
+            </ListItem>
             <ListItem>
               <Link href="https://github.com/rheeeuro" target="_blank">
                 <Button
