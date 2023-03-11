@@ -22,7 +22,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            Unity, C#
+            <Text as="b">Unity</Text>, C#
           </ListItem>
           <ListItem>
             <Meta>Trailer</Meta>

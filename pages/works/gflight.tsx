@@ -26,7 +26,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            Javascript, PHP, MariaDB
+            <Text as="b">Javascript</Text>, PHP, MariaDB
           </ListItem>
           <ListItem>
             <Meta>Github</Meta>

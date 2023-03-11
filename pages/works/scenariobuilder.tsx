@@ -18,7 +18,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            React, Typescript, Spring Boot
+            <Text as="b">React, Typescript, Spring Boot</Text>
           </ListItem>
         </List>
         <WorkImage src="/images/scenariobuilder.png" alt="scenariobuilder" />

@@ -29,7 +29,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            Java, Android Studio
+            Java, <Text as="b">Android Studio</Text>
           </ListItem>
           <ListItem>
             <Meta>Trailer</Meta>

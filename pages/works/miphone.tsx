@@ -26,7 +26,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            NodeJs, AWS S3, MongoDB
+            <Text as="b">NodeJs, AWS S3, MongoDB</Text>
           </ListItem>
           <ListItem>
             <Meta>Github</Meta>

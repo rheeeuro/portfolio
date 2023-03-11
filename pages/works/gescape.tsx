@@ -26,7 +26,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            Javascript, Three.js
+            Javascript, <Text as="b">Three.js</Text>
           </ListItem>
           <ListItem>
             <Meta>Trailer</Meta>

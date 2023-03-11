@@ -22,7 +22,7 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            Python, C++
+            <Text as="b">Python</Text>, C++
           </ListItem>
           <ListItem>
             <Meta>Thesis</Meta>

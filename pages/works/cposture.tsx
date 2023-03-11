@@ -29,7 +29,8 @@ const Work = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            NodeJs, Tensorflow poseNet, Google Teachable Machine
+            NodeJs,{" "}
+            <Text as="b">Tensorflow poseNet, Google Teachable Machine</Text>
           </ListItem>
           <ListItem>
             <Meta>Github</Meta>
