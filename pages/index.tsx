@@ -15,7 +15,12 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { IoLogoInstagram, IoLogoGithub, IoMail } from "react-icons/io5";
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoMail,
+  IoMailOutline,
+} from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -142,7 +147,7 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoMail} />}
+                  leftIcon={<Icon as={IoMailOutline} />}
                 >
                   eurohand@naver.com
                 </Button>
