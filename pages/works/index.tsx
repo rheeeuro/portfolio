@@ -2,6 +2,7 @@ import { WorkGridItem } from "@/components/gridItem";
 import Section from "@/components/section";
 import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
 
+import thumbIceLand from "@/public/images/iceland.png";
 import thumbScenarioBuilder from "@/public/images/scenariobuilder.png";
 import thumbSpineSlicer from "@/public/images/spineslicer.png";
 import thumbProfileFinder from "@/public/images/profilefinder.png";
@@ -22,6 +23,11 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem id="iceland" title="IceLand" thumbnail={thumbIceLand}>
+              로블록스 어드벤처 게임
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
               id="scenariobuilder"
