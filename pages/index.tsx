@@ -74,7 +74,7 @@ const Home = () => {
           <Box textAlign="center" my={4}>
             <Link href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                포트폴리오 보기
+                포트폴리오 바로가기
               </Button>
             </Link>
           </Box>
