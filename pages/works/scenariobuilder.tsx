@@ -23,20 +23,24 @@ const Work = () => {
         </List>
         <WorkImage src="/images/scenariobuilder.png" alt="scenariobuilder" />
         <Paragraph>
-          2021년 12월부터 <Text as="b">카카오엔터프라이즈</Text>의
-          솔루션플랫폼팀 인턴으로 <Text as="b">KICC DA Framework 프로젝트</Text>
-          에 참여하게 되었습니다.
+          2021년 12월부터 <Text as="b">카카오엔터프라이즈</Text>의 솔루션플랫폼
+          팀 인턴으로{" "}
+          <Text as="b">
+            고객사 보이스봇의 시나리오를 직접 작성 및 편집할 수 있는 플랫폼
+          </Text>
+          을 개발했습니다.
           <br />
-          고객사 보이스 봇의 시나리오를 고객사 담당자가 코딩 없이 구현할 수
-          있도록 SaaS화 하여 배포할 수 있도록 지원하였습니다.
+          전반적인 <Text as="b">프론트엔드를 기획 및 개발</Text>했으며, 보이스봇
+          <Text as="b">시나리오 테스트 자동화 기능을 구현</Text>했습니다.
           <br />
-          <Text as="b">전반적인 프론트엔드의 설계 및 구현</Text>을 도맡아
-          진행하였고,{" "}
-          <Text as="b">고객사의 시나리오 테스트 자동화 부분의 백엔드</Text>를
-          담당했습니다.
+          프론트엔드 자동배포 개선으로{" "}
+          <Text as="b">배포 속도를 기존 대비 1/3으로 단축</Text>시켰고, 해당
+          플랫폼 개발로 이전 프로세스 대비{" "}
+          <Text as="b">보이스봇의 생산량이 70%가량 상승</Text>했습니다.
           <br />
-          <Text as="b">Back-end에는 Spring boot</Text>,{" "}
-          <Text as="b">Front-end에는 React와 Typescript, Redux 등</Text>을
+          <br />
+          Back-end에는 <Text as="b">Spring boot</Text>, Front-end에는{" "}
+          <Text as="b">React</Text>와 <Text as="b">Typescript</Text>를
           이용했습니다.
         </Paragraph>
       </Container>

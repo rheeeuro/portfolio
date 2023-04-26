@@ -38,21 +38,20 @@ const Work = () => {
         </List>
         <WorkImage src="/images/spineslicer.png" alt="spineslicer" />
         <Paragraph>
-          2021년 가천대학교{" "}
-          <Text as="b">VMR 랩(Visualization and Mixed Reality Lab)</Text>을 통해{" "}
-          <Text as="b">Gmeditec의 개발 프로젝트</Text>를 맡아 진행하게
-          되었습니다.
+          2021년 가천대학교 VMR 랩(Visualization and Mixed Reality Lab)을 통해{" "}
+          <Text as="b">Gmeditec</Text>이라는 회사의{" "}
+          <Text as="b">외주 개발 프로젝트를 맡아 진행</Text>하게 되었습니다.
           <br />
           광학식 센서(OptiTrack)과 자기식 센서(NDI Aurora)를 이용하여 수술도구와
-          CT, C-arm의 좌표를 정합 하여 척추 수술을 보조하는 소프트웨어입니다.
+          CT, C-arm의 좌표를 정합 하여{" "}
+          <Text as="b">척추 수술을 보조하는 소프트웨어</Text>입니다.
           <br />
-          <Text as="b">3D Slicer와 Python</Text>으로 제작했고, SlicerIGT의 정합
-          모듈을 참조했습니다.
+          <Text as="b">3D Slicer</Text>와 <Text as="b">Python</Text>으로
+          제작했고, <Text as="b">SlicerIGT의 정합 모듈</Text>을 참조했습니다.
           <br />
-          <Text as="b">
-            센서 간의 정합 프로세스와 2D-3D 간의 정합 알고리즘을 개발
-          </Text>
-          했고 <Text as="b">관련 논문의 3저자로 등록</Text>
+          <Text as="b">센서 간의 정합 프로세스</Text>와{" "}
+          <Text as="b">2D-3D 간의 정합 알고리즘</Text>을 구현했고{" "}
+          <Text as="b">관련 논문의 3저자로 등록</Text>
           되어 있습니다.
         </Paragraph>
       </Container>

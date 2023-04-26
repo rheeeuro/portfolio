@@ -48,14 +48,16 @@ const Work = () => {
         </List>
         <WorkImage src="/images/gstore.png" alt="gstore" />
         <Paragraph>
-          2020년 모바일 프로그래밍 수업 프로젝트로 진행했으며{" "}
-          <Text as="b">
-            경기지역화폐 가맹점들을 검색하고 저장할 수 있는 어플
-          </Text>
-          입니다.
-          <br /> 4명의 팀으로 진행했으며,{" "}
-          <Text as="b">경기데이터드림 API와 카카오 맵 API를 이용</Text>하여
-          안드로이드 앱을 제작했으며 직접 플레이스토어에 올려보는 경험을 해볼 수
+          2020년 모바일 프로그래밍 프로젝트로 진행했으며 경기지역화폐 가맹점들을
+          검색하고 즐겨찾기 할 수 있는 어플입니다.
+          <br />
+          <br />
+          4명의 팀으로 진행했으며, <Text as="b">경기데이터드림 API</Text>와{" "}
+          <Text as="b">카카오 맵 API</Text>를 이용했고,{" "}
+          <Text as="b">Android Studio</Text>를 이용해 앱을 제작했습니다.
+          <br />
+          <br />
+          <Text as="b">Google Play 스토어에 배포</Text>하는 경험을 해볼 수
           있었습니다.
         </Paragraph>
       </Container>
