@@ -117,6 +117,16 @@ const Home = () => {
             </a>{" "}
             솔루션플랫폼팀 인턴
           </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            <a
+              href="https://www.ssafy.com/ksp/jsp/swp/swpMain.jsp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b>삼성소프트웨어아카테미 (SSAFY)</b>
+            </a>
+          </BioSection>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
