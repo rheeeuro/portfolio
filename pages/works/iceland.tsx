@@ -6,7 +6,7 @@ import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
 
 const Work = () => {
   return (
-    <Layout title="GStore">
+    <Layout title="IceLand">
       <Container>
         <Title>
           IceLand <Badge>2022</Badge>

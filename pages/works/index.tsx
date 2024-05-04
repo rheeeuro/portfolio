@@ -2,6 +2,8 @@ import { WorkGridItem } from "@/components/gridItem";
 import Section from "@/components/section";
 import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
 
+import thumbJoaopenapi from "@/public/images/joaopenapi.png";
+import thumbComeet from "@/public/images/comeet.png";
 import thumbIceLand from "@/public/images/iceland.png";
 import thumbScenarioBuilder from "@/public/images/scenariobuilder.png";
 import thumbSpineSlicer from "@/public/images/spineslicer.png";
@@ -23,6 +25,20 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="joaopenapi"
+              title="JOA Open API"
+              thumbnail={thumbJoaopenapi}
+            >
+              핀테크 프로젝트를 위한 가상은행 OPEN API
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem id="comeet" title="Comeet" thumbnail={thumbComeet}>
+              개발자들을 위한 스터디 플랫폼
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem id="iceland" title="IceLand" thumbnail={thumbIceLand}>
               로블록스 어드벤처 게임

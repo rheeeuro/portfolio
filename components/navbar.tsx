@@ -95,7 +95,7 @@ const Navbar = (props: NavbarProps) => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/rheeeuro/portfolio"
+            href="https://github.com/rheeeuro"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -103,7 +103,7 @@ const Navbar = (props: NavbarProps) => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            GitHub
           </LinkItem>
         </Stack>
         <Box flex={1} textAlign="right">
