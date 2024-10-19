@@ -17,7 +17,11 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./themeToggleButton";
 import { HTMLAttributeAnchorTarget, ReactNode } from "react";
-import { IoLogoGithub } from "react-icons/io5";
+import {
+  IoCloudDownload,
+  IoCloudDownloadOutline,
+  IoLogoGithub,
+} from "react-icons/io5";
 
 interface LinkItemProps {
   href?: string | undefined;
@@ -104,6 +108,18 @@ const Navbar = (props: NavbarProps) => {
           >
             <IoLogoGithub />
             GitHub
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://drive.google.com/file/d/14rbSwI9oC-TflE-mjDQdxCcwyShX477_/view?usp=sharing"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoCloudDownloadOutline />
+            Portfolio File
           </LinkItem>
         </Stack>
         <Box flex={1} textAlign="right">

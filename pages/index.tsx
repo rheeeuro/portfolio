@@ -65,11 +65,15 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph className="indent-0">
-            저는 프론트엔드 개발자 이유로 입니다.
-            <br /> 원활한 커뮤니케이션을 할 수 있는 기획자이자 개발자가 되고
-            싶습니다.
-            <br /> 저의 아이디어와 함께 향상 시킬 개발 실력으로 사람들의 삶에
-            새로운 경험을 제공하는 서비스를 만들고 싶습니다.
+            저는 프론트엔드 개발자 <b>이유로</b> 입니다.
+            <br /> 오픈소스나 다른 사람의{" "}
+            <b>코드를 빠르게 이해하고 분석하는 능력</b>을 바탕으로 이외의{" "}
+            <b>다양한 영역에서도 유연하게 작업</b>할 수 있습니다.
+            <br /> <b>시각적으로 매력적인 웹 경험</b>을 디자인하고 개발하는 것을
+            즐기며 개발한 프로젝트를 <b>피드백 받아보고 개선하는 일</b>을
+            좋아합니다.
+            <br /> 개발자로서 끊임없이 <b>새로운 기술을 배우는 것</b>에 열정이
+            가득하며, 이를 <b>팀과 공유하며 함께 성장</b>하고 싶습니다.
           </Paragraph>
           <Box textAlign="center" my={4}>
             <Link href="/works">
@@ -92,13 +96,24 @@ const Home = () => {
             <b>이화여자대학교 사범대학 부속이화금란고등학교</b> 졸업
           </BioSection>
           <BioSection>
+            <BioYear>2020</BioYear>
+            <a
+              href="https://www.joyfun.kr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b>조이펀 (JoyFun)</b>
+            </a>{" "}
+            산학협력인턴
+          </BioSection>
+          <BioSection>
             <BioYear>2021</BioYear>
             <a
               href="http://gmeditec.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <b>지메디텍</b>
+              <b>지메디텍 (Gmeditec)</b>
             </a>{" "}
             학부생연구원
           </BioSection>
@@ -113,7 +128,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <b>카카오엔터프라이즈</b>
+              <b>카카오엔터프라이즈(Kakaoenterprise)</b>
             </a>{" "}
             솔루션플랫폼팀 인턴
           </BioSection>
@@ -124,7 +139,17 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <b>삼성소프트웨어아카테미 (SSAFY)</b>
+              <b>삼성소프트웨어아카테미 (SSAFY)</b> 자바 전공반
+            </a>
+          </BioSection>
+          <BioSection>
+            <BioYear>2024</BioYear>
+            <a
+              href="https://www.nethru.co.kr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <b>넷스루 (Nethru)</b> 프론트엔드 개발자
             </a>
           </BioSection>
         </Section>
@@ -142,22 +167,11 @@ const Home = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="mailto:rheeeuro@gmail.com" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoMail} />}
-                >
-                  rheeeuro@gmail.com
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
               <Link href="mailto:eurohand@naver.com" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoMailOutline} />}
+                  leftIcon={<Icon as={IoMail} />}
                 >
                   eurohand@naver.com
                 </Button>
