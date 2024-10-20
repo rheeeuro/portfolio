@@ -146,6 +146,13 @@ const Navbar = (props: NavbarProps) => {
                 >
                   View Source
                 </MenuItem>
+                <MenuItem
+                  as={NextLink}
+                  href="https://drive.google.com/file/d/14rbSwI9oC-TflE-mjDQdxCcwyShX477_/view?usp=sharing"
+                  target="_blank"
+                >
+                  Portfolio File
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>
