@@ -2,6 +2,7 @@ import { WorkGridItem } from "@/components/gridItem";
 import Section from "@/components/section";
 import { Container, Divider, Heading, SimpleGrid } from "@chakra-ui/react";
 
+import thumbGitmagotchi from "@/public/images/gitmagotchi.png";
 import thumbJoaopenapi from "@/public/images/joaopenapi.png";
 import thumbComeet from "@/public/images/comeet.png";
 import thumbIceLand from "@/public/images/iceland.png";
@@ -25,6 +26,15 @@ const Works = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="gitmagotchi"
+              title="Gitmagotchi"
+              thumbnail={thumbGitmagotchi}
+            >
+              Git Commit 기반 캐릭터 키우기 프로젝트
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
               id="joaopenapi"

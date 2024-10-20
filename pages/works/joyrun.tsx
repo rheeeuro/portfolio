@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,10 +19,11 @@ const Work = () => {
         <Title>
           JoyRun <Badge>2020</Badge>
         </Title>
-        <p>
-          Azure Kinect Depth Sensor를 활용해 발로 바닥 스크린의 UI를 조작하는
-          전시회용 달리기 게임
-        </p>
+        <WorkImage src="/images/joyrun.png" alt="joyrun" />
+        <Heading as="h4" size="md">
+          &nbsp; Azure Kinect Depth Sensor를 활용해 발로 바닥 스크린의 UI를
+          조작하는 전시회용 달리기 게임
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -39,7 +48,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/joyrun.png" alt="joyrun" />
+        <br />
         <Paragraph>
           2020년 여름 산학협력 인턴에서 진행한 프로젝트로,{" "}
           <Text as="b">Azure Kinect</Text>의 <Text as="b">Depth Sensor</Text>로

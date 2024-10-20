@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,10 +19,11 @@ const Work = () => {
         <Title>
           SpineSlicer <Badge>2021</Badge>
         </Title>
-        <p>
-          광학식, 자기식 센서를 동시에 이용해 CT 데이터와 C-arm데이터를 한 번에
-          확인할 수 있는 척추 수술 보조용 네이게이션 소프트웨어
-        </p>
+        <WorkImage src="/images/spineslicer.png" alt="spineslicer" />
+        <Heading as="h4" size="md">
+          &nbsp; 광학식, 자기식 센서를 동시에 이용해 CT 데이터와 C-arm데이터를
+          한 번에 확인할 수 있는 척추 수술 보조용 네이게이션 소프트웨어
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -36,7 +45,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/spineslicer.png" alt="spineslicer" />
+        <br />
         <Paragraph>
           2021년 가천대학교 VMR 랩(Visualization and Mixed Reality Lab)을 통해{" "}
           <Text as="b">Gmeditec</Text>이라는 회사의{" "}

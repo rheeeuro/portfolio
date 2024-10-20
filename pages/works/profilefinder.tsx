@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,7 +19,11 @@ const Work = () => {
         <Title>
           Profile-Finder <Badge>2021</Badge>
         </Title>
-        <p>딥러닝 키워드 필터링 시스템을 이용한 배우 구인구직 서비스 플랫폼</p>
+        <WorkImage src="/images/profilefinder.png" alt="profilefinder" />
+        <Heading as="h4" size="md">
+          &nbsp; 딥러닝 키워드 필터링 시스템을 이용한 배우 구인구직 서비스
+          플랫폼
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -58,7 +70,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/profilefinder.png" alt="profilefinder" />
+        <br />
         <Paragraph>
           2019년부터 3학기에 걸쳐 4명의 팀으로 진행한 졸업작품 프로젝트입니다.
           <br />

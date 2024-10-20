@@ -59,7 +59,6 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Intro</Meta>

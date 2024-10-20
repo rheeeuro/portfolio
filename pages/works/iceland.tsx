@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,7 +19,10 @@ const Work = () => {
         <Title>
           IceLand <Badge>2022</Badge>
         </Title>
-        <p>로블록스 게임</p>
+        <WorkImage src="/images/iceland.png" alt="iceland" />
+        <Heading as="h4" size="md">
+          &nbsp; 로블록스 게임
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Game</Meta>
@@ -32,7 +43,7 @@ const Work = () => {
             <Text as="b">Lua</Text>, Roblox Studio
           </ListItem>
         </List>
-        <WorkImage src="/images/iceland.png" alt="iceland" />
+        <br />
         <Paragraph>
           2022년 3명이서 진행한 로블록스 게임입니다.
           <br />

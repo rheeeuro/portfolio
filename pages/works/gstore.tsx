@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,7 +19,10 @@ const Work = () => {
         <Title>
           GStore <Badge>2020</Badge>
         </Title>
-        <p>경기 지역화폐 가맹점 찾기 어플</p>
+        <WorkImage src="/images/gstore.png" alt="gstore" />
+        <Heading as="h4" size="md">
+          &nbsp; 경기 지역화폐 가맹점 찾기 어플
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>App store</Meta>
@@ -46,7 +57,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/gstore.png" alt="gstore" />
+        <br />
         <Paragraph>
           2020년 모바일 프로그래밍 프로젝트로 진행했으며 경기지역화폐 가맹점들을
           검색하고 즐겨찾기 할 수 있는 어플입니다.

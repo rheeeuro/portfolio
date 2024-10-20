@@ -1,7 +1,14 @@
 import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
-import { Badge, Container, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -10,7 +17,10 @@ const Work = () => {
         <Title>
           ScenarioBuilder <Badge>2022</Badge>
         </Title>
-        <p>고객사가 직접 보이스봇 시나리오를 생성, 편집할 수 있는 플랫폼</p>
+        <WorkImage src="/images/scenariobuilder.png" alt="scenariobuilder" />
+        <Heading as="h4" size="md">
+          &nbsp; 고객사가 직접 보이스봇 시나리오를 생성, 편집할 수 있는 플랫폼
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -21,7 +31,7 @@ const Work = () => {
             <Text as="b">React, Typescript, Spring Boot</Text>
           </ListItem>
         </List>
-        <WorkImage src="/images/scenariobuilder.png" alt="scenariobuilder" />
+        <br />
         <Paragraph>
           2021년 12월부터 <Text as="b">카카오엔터프라이즈</Text>의 솔루션플랫폼
           팀 인턴으로{" "}

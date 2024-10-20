@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,10 +19,11 @@ const Work = () => {
         <Title>
           C-posture <Badge>2020</Badge>
         </Title>
-        <p>
-          실시간 웹캠으로 사용자의 자세를 측정하고 스트레칭을 가이드해주는
-          서비스
-        </p>
+        <WorkImage src="/images/cposture.png" alt="cposture" />
+        <Heading as="h4" size="md">
+          &nbsp; 실시간 웹캠으로 사용자의 자세를 측정하고 스트레칭을
+          가이드해주는 서비스
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -40,7 +49,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/cposture.png" alt="cposture" />
+        <br />
         <Paragraph>
           2020년 소프트웨어공학 프로젝트로 진행한 자세 교정 및 스트레칭 트레이너
           서비스 입니다.

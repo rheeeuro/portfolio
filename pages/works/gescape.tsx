@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,7 +19,10 @@ const Work = () => {
         <Title>
           G-Escape <Badge>2020</Badge>
         </Title>
-        <p>3D/VR 방탈출 게임</p>
+        <WorkImage src="/images/gescape.png" alt="gescape" />
+        <Heading as="h4" size="md">
+          &nbsp; 3D/VR 방탈출 게임
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -43,7 +54,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/gescape.png" alt="gescape" />
+        <br />
         <Paragraph>
           2020년 컴퓨터 그래픽스 프로젝트로 진행한 3D VR 방 탈출 게임입니다.
           <br />

@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,7 +19,10 @@ const Work = () => {
         <Title>
           G-Flight <Badge>2019</Badge>
         </Title>
-        <p>HTML Canvas를 이용한 쿼드트리 시각화 비행기 게임</p>
+        <WorkImage src="/images/gflight.png" alt="gflight" />
+        <Heading as="h4" size="md">
+          &nbsp; HTML Canvas를 이용한 쿼드트리 시각화 비행기 게임
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -36,7 +47,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/gflight.png" alt="gflight" />
+        <br />
         <Paragraph>
           2019년 자료구조 프로젝트로 시작한 Quad Tree 및 Prim algorithm 시각화
           비행기 게임입니다.

@@ -2,7 +2,15 @@ import Layout from "@/components/layout/article";
 import Paragraph from "@/components/paragraph";
 import { Meta, Title, WorkImage } from "@/components/work";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Badge, Container, Link, List, ListItem, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Container,
+  Heading,
+  Link,
+  List,
+  ListItem,
+  Text,
+} from "@chakra-ui/react";
 
 const Work = () => {
   return (
@@ -11,7 +19,10 @@ const Work = () => {
         <Title>
           miPhone <Badge>2019</Badge>
         </Title>
-        <p>스마트폰 스펙 비교 사이트</p>
+        <WorkImage src="/images/miphone.png" alt="miphone" />
+        <Heading as="h4" size="md">
+          &nbsp; 스마트폰 스펙 비교 사이트
+        </Heading>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
@@ -36,7 +47,7 @@ const Work = () => {
             </Link>
           </ListItem>
         </List>
-        <WorkImage src="/images/miphone.png" alt="miphone" />
+        <br />
         <Paragraph>
           2019년 데이터베이스 프로젝트로 진행한 스마트폰 스펙 비교 웹
           서비스입니다.
